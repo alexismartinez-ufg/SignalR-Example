@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, <span id="currentUserName">Guest</span>!</h1>
+    <p>Learn about <a href="https://github.com/alexismartinez-ufg">Ejemplo de SignalR con Aleziz</a>.</p>
+</div>
+
+<div class="container mt-5">
+    <h2>Usuarios Conectados: <span id="userCount">0</span></h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre de Usuario</th>
+            </tr>
+        </thead>
+        <tbody id="usersList">
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/people.js"></script>
