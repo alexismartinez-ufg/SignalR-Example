@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Permisos para ir al baño";
+}
+
+<div class="container mt-4">
+    <h2>Bienvenido, <span id="currentUserName">Usuario</span></h2>
+
+    <div id="userActions">
+        <button id="requestPermissionBtn" class="btn btn-primary" style="display:none;">Pedir permiso para ir al baño</button>
+    </div>
+
+    <h3 class="mt-5">Usuarios</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Solicitud de Permiso</th>
+                <th>Estado del Permiso</th>
+            </tr>
+        </thead>
+        <tbody id="usersList">
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/permisos.js"></script>

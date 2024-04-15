@@ -18,6 +18,11 @@ namespace SignalR_Example.Controllers
             return View();
         }
 
+        public IActionResult Permisos()
+        {
+            return View(); 
+        }
+
         public IActionResult Privacy()
         {
             return View();

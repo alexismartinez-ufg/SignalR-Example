@@ -31,6 +31,7 @@ namespace SignalR_Example
             app.UseAuthorization();
 
             app.MapHub<PeopleHub>("/peopleHub");
+            app.MapHub<PermisosHub>("/permisosHub");
 
             app.MapControllerRoute(
                 name: "default",
